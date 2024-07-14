@@ -1,0 +1,14 @@
+{
+  "name": "app_backend",
+  "version": "1.0.0",
+  "description": "This is the backend for user portfolio project, where user can create there basic portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Archit Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
