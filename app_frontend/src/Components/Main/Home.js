@@ -11,8 +11,8 @@ export default function Home() {
       <Row className="h-100">
         <Col md={6} style={{display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '20px' }}>
           <h1 style={{ fontSize: '2.5rem', textAlign: 'center' }}>
-            "Hi! i'm Archit Kumar Software Engineer." <br></br>
-          <Button variant="outline-dark">&rarr;About Me</Button>
+            "Hi! i'm Archit Kumar Software Engineer. Design and develop web Apps 😉" <br></br>
+          <Button className='mt-5' variant="outline-dark">&rarr;About Me</Button>
           </h1>
         </Col>
         <Col md={6} style={{display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '20px' }}>
