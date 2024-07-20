@@ -8,9 +8,16 @@ import React from 'react'
 export default function NavBar() {
   return (
     <>
-      <Navbar expand="md" className="bg-body-tertiary mb-3" sticky='top'>
+      <Navbar expand="md" className=" " sticky='top' style={{
+        backdropFilter: 'blur(8px)', // Reduced blur effect
+        backgroundColor: 'rgba(255, 255, 255, 0.7)' // Semi-transparent background
+      }}>
         <Container fluid>
-          <Navbar.Brand href="#">&rarr; Archit Kumar</Navbar.Brand>
+          <Navbar.Brand href="#"><img
+              src="/profile.jpg" // Replace with the path to your image
+              alt="Arrow Icon"
+              style={{ maxWidth: '70px', marginRight: '8px', borderRadius: '50%' }} // Adjust size and spacing as needed
+            /> Archit Kumar</Navbar.Brand>
           <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`} />
           <Navbar.Offcanvas
             id={`offcanvasNavbar-expand-md`}
