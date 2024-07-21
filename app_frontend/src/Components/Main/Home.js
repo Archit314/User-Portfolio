@@ -15,7 +15,7 @@ export default function Home() {
           <Col md={6} className="d-flex justify-content-center align-items-center p-3">
             <h1 className="text-center" style={{ fontSize: '2.5rem' }}>
               "Hi! I'm Archit Kumar, Software Engineer. Design and develop web Apps 😉" <br />
-              <Button className="mt-5" variant="outline-dark">&rarr; About Me</Button>
+              <Button className="mt-5" variant="outline-dark" as={Link} to='/about'>&rarr; About Me</Button>
             </h1>
           </Col>
           <Col md={6} className="d-flex justify-content-center align-items-center p-3">
