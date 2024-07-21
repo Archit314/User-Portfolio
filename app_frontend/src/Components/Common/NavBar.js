@@ -13,7 +13,7 @@ export default function NavBar() {
         backgroundColor: 'rgba(255, 255, 255, 0.7)' // Semi-transparent background
       }}>
         <Container fluid>
-          <Navbar.Brand href="#"><img
+          <Navbar.Brand href="#" style={{fontSize: '25px'}}><img
             src="/profile.jpg" // Replace with the path to your image
             alt="Arrow Icon"
             style={{ maxWidth: '70px', marginRight: '8px', borderRadius: '50%' }} // Adjust size and spacing as needed
@@ -32,7 +32,7 @@ export default function NavBar() {
               </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
-              <Nav className="justify-content-end flex-grow-1 pe-3">
+              <Nav className="justify-content-end flex-grow-1 pe-3" style={{fontSize: '25px'}}>
                 <Nav.Link as={NavLink} to="/">Home</Nav.Link>
                 <Nav.Link as={NavLink} to="/about">About</Nav.Link>
                 <Nav.Link as={NavLink} to="/skills">Skills</Nav.Link>
