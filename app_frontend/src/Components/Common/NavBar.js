@@ -2,22 +2,23 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-
 import React from 'react'
 
 export default function NavBar() {
   return (
     <>
-      <Navbar expand="md" className=" " sticky='top' style={{
+      <Navbar expand="md" sticky="top" className="overflow-hidden" style={{
         backdropFilter: 'blur(8px)', // Reduced blur effect
         backgroundColor: 'rgba(255, 255, 255, 0.7)' // Semi-transparent background
       }}>
         <Container fluid>
           <Navbar.Brand href="#"><img
-              src="/profile.jpg" // Replace with the path to your image
-              alt="Arrow Icon"
-              style={{ maxWidth: '70px', marginRight: '8px', borderRadius: '50%' }} // Adjust size and spacing as needed
-            /> Archit Kumar</Navbar.Brand>
+            src="/profile.jpg" // Replace with the path to your image
+            alt="Arrow Icon"
+            style={{ maxWidth: '70px', marginRight: '8px', borderRadius: '50%' }} // Adjust size and spacing as needed
+          />
+            Archit Kumar
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`} />
           <Navbar.Offcanvas
             id={`offcanvasNavbar-expand-md`}
