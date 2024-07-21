@@ -10,7 +10,7 @@ export default function Footer() {
           <Col md={4} className="mb-4 mb-md-0">
             <h5>About</h5>
             <p>
-            A professional Backend Developer with 1 year of experience in designing, developing and maintaining server side web applications. Proficient in database management, API integration and server side logic. Committed to writing clean, efficient and maintainable code using modular programming.
+              A professional Backend Developer with 1 year of experience in designing, developing and maintaining server side web applications. Proficient in database management, API integration and server side logic. Committed to writing clean, efficient and maintainable code using modular programming.
             </p>
           </Col>
           <Col md={4} className="mb-4 mb-md-0">
@@ -25,10 +25,13 @@ export default function Footer() {
           <Col md={4}>
             <h5>Social accounts</h5>
             <ul className="list-unstyled">
-            {['linkedin.svg', 'github.svg', 'instagram.svg', 'whatsapp.svg'].map((imgSrc, index) => (
+              {['linkedin.svg', 'github.svg', 'instagram.svg'].map((imgSrc, index) => (
                 <Card.Img key={index} src={`/${imgSrc}`} style={{ maxWidth: '40px', padding: '5px' }} />
-            ))}
+              ))}
             </ul>
+            <p>
+              <Card.Img src={`/whatsapp.svg`} style={{ maxWidth: '40px', padding: '5px' }} /> 7078590454
+            </p>
           </Col>
         </Row>
         <Row className="mt-4">

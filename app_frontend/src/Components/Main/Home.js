@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
   return (
@@ -39,7 +40,7 @@ export default function Home() {
           <Col xs={6} sm={4} md={4} lg={4} className="d-flex justify-content-center align-items-stretch mb-3">
             <Card className="h-100 d-flex flex-column align-items-center justify-content-center" style={{ padding: '1rem', height: '300px', width: '100%', border: 'none' }}>
               <Card.Body className="d-flex flex-column align-items-center justify-content-center">
-                <Button className="mt-auto" variant="outline-dark">&rarr; View more</Button>
+                <Button className="mt-auto" variant="outline-dark" as={Link} to='/skills'>&rarr; View more</Button>
               </Card.Body>
             </Card>
           </Col>
