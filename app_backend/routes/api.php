@@ -9,3 +9,6 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 Route::get('/user/detail/{id}', [UserController::class, 'show']);
+Route::get('/test', function () {
+    return response()->json(['message' => 'API is working']);
+});
