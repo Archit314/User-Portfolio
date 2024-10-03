@@ -34,10 +34,21 @@ class UserController extends Controller
      * Display the specified resource.
      */
     public function show(string $id)
-    {
-        //
-        return "details";
+{
+    // Mock data for demonstration purposes
+    $users = [
+        1 => ['name' => 'John Doe', 'email' => 'john@example.com', 'role' => 'Admin'],
+        2 => ['name' => 'Jane Smith', 'email' => 'jane@example.com', 'role' => 'User'],
+    ];
+
+    // Check if the user exists in the mock data
+    if (array_key_exists($id, $users)) {
+        return response()->json($users[$id]);
+    } else {
+        return response()->json(['error' => 'User not found'], 404);
     }
+}
+
 
     /**
      * Show the form for editing the specified resource.
