@@ -9,3 +9,4 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 Route::get('/user/detail/{id}', [UserController::class, 'show']);
+Route::post('/user/sign-up', [UserController::class, 'create']);
