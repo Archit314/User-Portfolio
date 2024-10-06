@@ -41,7 +41,7 @@ class UserController extends Controller
         }
 
         // Creating object of UserService class:
-        $userService = new UserService;
+        $userService = new UserService();
         // Calling createUser method of UserService class:
         $createdUser = $userService->createUser($request->input('name'), $request->input('email'), $request->input('password'));
 
