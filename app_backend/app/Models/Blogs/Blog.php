@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Blog extends Model
 {
     use HasFactory;
-    protected $fillable = ['user_id', 'title', 'description', 'image_url'];
+    protected $fillable = ['user_id', 'title', 'description', 'image_url', 'link'];
 
     // Relationship to User
     public function user()
