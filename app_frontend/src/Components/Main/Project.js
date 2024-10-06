@@ -1,28 +1,23 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'; // Ensure this import is present
 
 const projects = [
   {
-    title: "Self Project 1",
-    description: "This project involves creating a modern web application using React and Bootstrap.",
-    imageUrl: "https://via.placeholder.com/600x400",
-    link: "#",
+    title: "Portfolio",
+    description: "This is my portfolio project.",
+    imageUrl: "https://i.ytimg.com/vi/TwYKwaEjJd4/maxresdefault.jpg",
+    link: "https://architkumar.netlify.app",
+    detailsLink: "/projects/portfolio", // Update this link to your project details page
     type: "Self"
   },
   {
-    title: "Live Project 1",
-    description: "This project focuses on API development and database handling.",
-    imageUrl: "https://via.placeholder.com/600x400",
-    link: "#",
+    title: "NIWISH",
+    description: "Niwish is a platform where you can Buy/Sell Metal (Gold/Silver), Buy Coins & Create SIP starting with ₹1.",
+    imageUrl: "https://cms.bluelupin.com/uploads/i_Stock_1411911762_28f103b49a.jpg",
+    link: "https://niwish.com",
+    detailsLink: "/projects/niwish", // Update this link to your project details page
     type: "Live"
-  },
-  {
-    title: "Self Project 2",
-    description: "This project involves building responsive and dynamic web pages.",
-    imageUrl: "https://via.placeholder.com/600x400",
-    link: "#",
-    type: "Self"
   }
 ];
 
@@ -38,8 +33,6 @@ export default function Projects() {
         <Button
           className="mt-auto"
           variant={filter === 'All' ? "dark" : "outline-dark"}
-          as={Link}
-          to="#"
           onClick={() => setFilter('All')}
           style={{ margin: '0 5px', borderRadius: '30px', padding: '10px 20px' }}
         >
@@ -48,8 +41,6 @@ export default function Projects() {
         <Button
           className="mt-auto"
           variant={filter === 'Self' ? "dark" : "outline-dark"}
-          as={Link}
-          to="#"
           onClick={() => setFilter('Self')}
           style={{ margin: '0 5px', borderRadius: '30px', padding: '10px 20px' }}
         >
@@ -58,8 +49,6 @@ export default function Projects() {
         <Button
           className="mt-auto"
           variant={filter === 'Live' ? "dark" : "outline-dark"}
-          as={Link}
-          to="#"
           onClick={() => setFilter('Live')}
           style={{ margin: '0 5px', borderRadius: '30px', padding: '10px 20px' }}
         >
@@ -74,15 +63,24 @@ export default function Projects() {
               <Card.Body className="d-flex flex-column p-4">
                 <Card.Title className="text-center mb-3" style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>{project.title}</Card.Title>
                 <Card.Text className="flex-grow-1" style={{ fontSize: '1rem', color: '#6c757d' }}>{project.description}</Card.Text>
-                <Button
-                  className="mt-auto"
-                  variant="outline-dark"
-                  as={Link}
-                  to={project.link}
-                  style={{ borderRadius: '30px', padding: '10px 20px' }}
-                >
-                  View Project
-                </Button>
+                <div className="d-flex justify-content-between mt-auto">
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+                    <Button
+                      variant="outline-dark"
+                      style={{ borderRadius: '30px', padding: '10px 20px' }}
+                    >
+                      View Project
+                    </Button>
+                  </a>
+                  <Button
+                    variant="outline-dark"
+                    as={Link}
+                    to={project.detailsLink} // Link to your project details page
+                    style={{ borderRadius: '30px', padding: '10px 20px' }}
+                  >
+                    View Details
+                  </Button>
+                </div>
               </Card.Body>
             </Card>
           </Col>
