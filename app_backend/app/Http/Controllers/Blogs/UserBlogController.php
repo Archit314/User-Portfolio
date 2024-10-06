@@ -41,7 +41,8 @@ class UserBlogController extends Controller
                 'title' => 'required|string',
                 'description' => 'required|string',
                 'imnage_url' => 'string',
-                'link' => 'required|string'
+                'link' => 'required|string',
+                'userId' => 'required'
             ]
         );
 
@@ -50,7 +51,7 @@ class UserBlogController extends Controller
         }
 
         $userBlogService = new UserBlogService();
-        $createdNewBlog = $userBlogService->create(4, $request->input('title'), $request->input('description'), $request->input('image_url'), $request->input('link'));
+        $createdNewBlog = $userBlogService->create($request->input('userId'), $request->input('title'), $request->input('description'), $request->input('image_url'), $request->input('link'));
 
         if(!$createdNewBlog){
             return response()->json(['status' => 404, 'message' => 'User blog creation failed'], 404);
