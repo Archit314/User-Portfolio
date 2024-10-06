@@ -8,15 +8,15 @@ import { Link } from 'react-router-dom';
 
 const blogs = [
   {
-    title: "Self Project 1",
-    description: "This project involves creating a modern web application using React and Bootstrap.",
+    title: "Importance of php.ini file",
+    description: "This blog tells how to solve the errors occured during laravel project creation in php.ini file.",
     imageUrl: "https://miro.medium.com/v2/resize:fit:828/format:webp/1*KDaMn4L7ERWXrRqvmq6Fwg.jpeg",
     link: "https://medium.com/@architkumar-SDE/how-do-you-solve-errors-related-to-the-php-ini-file-while-creating-a-laravel-project-ca1e798e8097", // Update this link to your blog post
     type: "Self"
   },
   {
-    title: "Live Project 1",
-    description: "This project focuses on API development and database handling.",
+    title: "Host Laravel project on Render using Docker & Nginx",
+    description: "This blog helps you to host your Laravel project on Render using Docker & Nginx configurations.",
     imageUrl: "https://miro.medium.com/v2/resize:fit:2000/format:webp/1*Cp4IuDtZOkbYGFVUwyqxEA.png",
     link: "https://medium.com/@architkumar-SDE/how-to-deploy-laravel-application-on-render-for-free-using-docker-nginx-configuration-9683b3378756", // Update this link to your blog post
     type: "Live"
