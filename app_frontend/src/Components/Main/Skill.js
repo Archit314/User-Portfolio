@@ -8,7 +8,7 @@ export default function Skill() {
     return (
         <Container>
             <Container fluid className="py-5">
-                <h2 className="text-center" style={{marginBottom: '85px'}}>Technologies & Languages</h2>
+            <h2 className="mb-4 text-center" style={{ fontWeight: '700', fontSize: '2.5rem', color: '#343a40' }}>Professional Skills</h2> 
                 <Row className="justify-content-center">
                     {['mongodb.svg', 'express.svg', 'react.svg', 'nodejs2.svg', 'express.svg', 'adonisJs.png', 'javascript.png', 'typescript.png', 'php.png', 'laravel.png','html.png', 'css.png', 'bootstrap.png', 'sql.png', 'github.png', 'postgresql.svg'].map((imgSrc, index) => (
                         <Col key={index} xs={6} sm={4} md={4} lg={4} className="d-flex justify-content-center align-items-stretch mb-3">

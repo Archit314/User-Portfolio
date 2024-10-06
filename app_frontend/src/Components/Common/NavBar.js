@@ -37,6 +37,7 @@ export default function NavBar() {
                 <Nav.Link as={NavLink} to="/about">About</Nav.Link>
                 <Nav.Link as={NavLink} to="/skills">Skills</Nav.Link>
                 <Nav.Link as={NavLink} to="/projects">Projects</Nav.Link>
+                <Nav.Link as={NavLink} to="/blogs">Blogs</Nav.Link>
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>

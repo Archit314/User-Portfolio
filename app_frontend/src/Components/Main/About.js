@@ -14,7 +14,7 @@ export default function About() {
           />
         </Col>
         <Col md={8} className='mb-5'>
-          <h2>About Me</h2>
+          <h2 className="mb-4 text-center" style={{ fontWeight: '700', fontSize: '2.5rem', color: '#343a40' }}>About Me</h2>          
           <p>
             Hello! I'm Archit Kumar, a passionate Software Engineer with 1 year of experience in
             API development and database handling. I enjoy creating modern, responsive web

@@ -8,6 +8,7 @@ import Skill from "./Components/Main/Skill";
 import About from "./Components/Main/About";
 import Project from "./Components/Main/Project";
 import ScrollToTop from "./Components/Common/ScrollToTop";
+import Blog from "./Components/Main/Blog";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/about" element={<About/>}/>
           <Route path="/skills" element={<Skill/>}/>
           <Route path="/projects" element={<Project/>}/>
+          <Route path="/blogs" element={<Blog/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>
